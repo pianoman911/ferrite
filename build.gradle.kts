@@ -12,10 +12,13 @@ version = "1.0.0"
 
 repositories {
     mavenCentral()
+    flatDir {
+        dirs("lib")
+    }
 }
 
 dependencies {
-
+    api(files("lib/quancom.jar"))
 }
 
 application {

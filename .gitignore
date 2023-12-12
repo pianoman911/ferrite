@@ -289,3 +289,6 @@ run/
 
 docker_run/
 .env
+
+### Custom HTS Ferrite Patch ###
+!lib/*
