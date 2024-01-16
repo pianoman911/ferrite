@@ -17,6 +17,14 @@ repositories {
     }
 }
 
+java {
+    withSourcesJar()
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+        vendor.set(JvmVendorSpec.ADOPTIUM)
+    }
+}
+
 dependencies {
     api(files("lib/quancom.jar"))
 }
